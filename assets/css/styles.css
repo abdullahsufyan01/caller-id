@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --nav-activecolor:#FF9600 !important;
+    --header-bg:#0A70B9;
+    --nav-link-color:#ffffff
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: var(--header-bg);
+}
+
+header nav .navbar-brand{
+    color: #ffffff;
+}
+
+header nav .navbar-brand:hover{
+    color: #ffffff;
+}
+
+header .navbar-nav .nav-link{
+    color: var(--nav-link-color);
+}
+
+header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--nav-activecolor);
+}
+
+header .navbar-nav .nav-link:hover {
+    color: var(--nav-activecolor);
+}
+
+header nav .login-signup .btn-login{
+    color: #FF9600;
+    transition: ease-in-out all .5s;
+}
+
+header nav .login-signup .btn-login:hover{
+    color: #ffffff;
+    background-color: var(--nav-activecolor);
+}
+
+header nav .login-signup .btn-signup{
+    color: #ffffff;
+    background-color: var(--nav-activecolor);
+    transition: ease-in-out all .5s;
+}
+
+header nav .login-signup .btn-signup:hover{
+    background-color: transparent;
+    border-color: #FF9600;
+}
+
+
