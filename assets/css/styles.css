@@ -310,3 +310,49 @@ section.cid-arms{
     background-repeat: no-repeat;
     background-position: right;
 }
+
+.app-download__title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.app-download__apps {
+    margin-top: 16px;
+}
+
+.footer {
+    padding: 70px 0;
+    color: #7F7F7F;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+.footer__links--border {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.footer__links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__links ul li {
+    margin-bottom: 12px;
+}
+
+.footer__links a {
+    color: #7F7F7F;
+    text-decoration: none;
+}
+
+.footer__links a:hover{
+    color: #FF9600;
+}
+
+.footer-links-heading{
+    font-weight: bold;
+    color: #0A70B9;
+}
