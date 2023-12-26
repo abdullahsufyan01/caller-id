@@ -11,54 +11,344 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Include Lottie library from CDN -->
   </head>
   <body>
-    <header class="py-lg-3 shadow-sm fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/">Caller-ID </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Area Codes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Most Searched</a>
-                </li>
-                <li class="nav-item">
+    <div class="header">
+      <header class="py-lg-3 shadow-sm">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">Caller-ID </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Area Codes</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Most Searched</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Most Commented</a>
                   </li>
-              </ul>
-             <div class="login-signup d-flex column-gap-3">
-                <a href="login.html" type="button" class="btn btn-login">Login</a>
-                <a href="signup.html" type="button" class="btn btn-primary btn-signup">Signup</a>
-             </div>
+                </ul>
+                <div class="login-signup d-flex column-gap-3">
+                  <a href="login.html" type="button" class="btn btn-login"
+                    >Login</a
+                  >
+                  <a
+                    href="signup.html"
+                    type="button"
+                    class="btn btn-primary btn-signup"
+                    >Signup</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-cnt">
+            <h1 class="h1 mb-3 mb-md-5 mb-lg-4">
+              Reverse Phone &amp; Text Lookup
+            </h1>
+            <div class="row">
+              <div class="col-12 col-lg-7">
+                <form action="">
+                  <div
+                    class="js-phone-wrapper phone-search-wrapper d-flex justify-content-between"
+                  >
+                    <div class="w-100 me-3">
+                      <div class="input position-relative">
+                        <input
+                          type="tel"
+                          name="phon"
+                          id="phone-input"
+                          class="w-75 border-0"
+                          autocomplete="off"
+                          required
+                          data-placeholder-focus="false"
+                          placeholder=" "
+                        />
+                        <label for="phone-input"
+                          >Enter any phone number,
+                          <span class="text-nowrap"
+                            >e.g. (555) 123-4567</span
+                          ></label
+                        >
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-search"
+                      type="submit"
+                      data-track="ga"
+                      data-ga-action="Search CTA"
+                      data-ga-label="Search"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22.135"
+                        height="22.105"
+                        viewBox="0 0 22.135 22.105"
+                      >
+                        <path
+                          fill="#fff"
+                          stroke="#fff"
+                          d="m2.112 21.336 7.194-7.194A6.578 6.578 0 0 0 11.4 15.35a7.746 7.746 0 0 0 8-1.8 7.363 7.363 0 0 0 2.239-5.4A7.644 7.644 0 0 0 13.963.5a7.314 7.314 0 0 0-5.388 2.239 7.388 7.388 0 0 0-2.224 5.4 7.446 7.446 0 0 0 .418 2.478 7.577 7.577 0 0 0 1.254 2.239L.769 20.05a.782.782 0 0 0-.269.615.928.928 0 0 0 .3.672.937.937 0 0 0 1.313 0Zm11.851-7.343a5.586 5.586 0 0 1-4.119-1.716 5.66 5.66 0 0 1-1.7-4.134 5.66 5.66 0 0 1 1.7-4.134 5.586 5.586 0 0 1 4.119-1.716 5.86 5.86 0 0 1 5.881 5.851 5.86 5.86 0 0 1-5.881 5.851Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3 mt-md-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19.393"
+                height="27.378"
+                viewBox="0 0 19.393 27.378"
+                class="me-2"
+              >
+                <path
+                  fill="#455a64"
+                  d="M9.696 0a7.424 7.424 0 0 0-7.415 7.415v4.563a.57.57 0 0 0 .57.57h2.282a.57.57 0 0 0 .57-.57V7.415a3.993 3.993 0 1 1 7.985 0v4.563a.57.57 0 0 0 .57.57h2.281a.57.57 0 0 0 .57-.57V7.415A7.424 7.424 0 0 0 9.696 0Z"
+                  data-name="Path 89730"
+                />
+                <path
+                  fill="#ffc107"
+                  d="M2.852 11.407h13.689a2.852 2.852 0 0 1 2.852 2.852v10.267a2.852 2.852 0 0 1-2.852 2.852H2.852A2.852 2.852 0 0 1 0 24.526V14.259a2.852 2.852 0 0 1 2.852-2.852Z"
+                  data-name="Path 89731"
+                />
+                <path
+                  fill="#455a64"
+                  d="M12.548 17.681a2.852 2.852 0 1 0-4.117 2.544l-.44 3.08a.57.57 0 0 0 .485.645.563.563 0 0 0 .08.006h2.282a.57.57 0 0 0 .57-.651l-.44-3.08a2.862 2.862 0 0 0 1.58-2.544Z"
+                  data-name="Path 89732"
+                />
+              </svg>
+              <small class="font-color-gray"
+                >Your search is confidential. Owner will not be notified.</small
+              >
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </section>
+    </div>
+    <div class="hero-gradient"></div>
+    <main>
+      <section class="cid-connect">
+        <div class="container-fluid container-lg px-4 px-md-5 px-lg-3">
+          <div class="connect">
+            <h2 class="h2">
+              Connecting <strong>Data</strong> And The
+              <strong>Real World</strong>
+            </h2>
+            <p class="highlighted-number">113,736,257+</p>
+            <p class="highlighted-text">Phone Numbers Searched</p>
+            <div class="d-flex justify-content-center mt-4 mt-md-5 mt-lg-4">
+              <div
+                class="d-flex flex-column flex-lg-row align-items-center justify-content-center pe-4 pe-md-5 pe-lg-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21.065"
+                  height="21.066"
+                  viewBox="0 0 21.065 21.066"
+                >
+                  <path
+                    fill="#FF9600"
+                    d="M16.278 0H4.788A4.793 4.793 0 0 0 0 4.788v7.66a4.8 4.8 0 0 0 3.83 4.692v2.968a.958.958 0 0 0 1.489.8l5.5-3.669h5.458a4.793 4.793 0 0 0 4.788-4.788V4.788A4.793 4.793 0 0 0 16.278 0Zm-1.915 11.49H6.7a.958.958 0 0 1 0-1.915h7.66a.958.958 0 0 1 0 1.915Zm1.915-3.83H4.788a.958.958 0 0 1 0-1.915h11.49a.958.958 0 0 1 0 1.915Z"
+                    data-name="Group 121561"
+                  />
+                </svg>
+                <p class="text-center mb-0 ms-2">
+                  3 Million+ <br class="d-lg-none" />Comments Submitted
+                </p>
+              </div>
+              <div
+                class="d-flex flex-column flex-lg-row align-items-center justify-content-center ps-4 ps-md-5 ps-lg-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="26.587"
+                  height="23.918"
+                  viewBox="0 0 26.587 23.918"
+                >
+                  <g transform="translate(.504 .514)">
+                    <path
+                      fill="#FF9600"
+                      stroke="rgba(0,0,0,0)"
+                      d="M20.083 6.377A7.99 7.99 0 0 0 4.266 7.956c0 .18.007.364.023.559a4.794 4.794 0 0 0 .511 9.562h.559c-.013-.177-.027-.353-.027-.533a6.925 6.925 0 1 1 13.85 0c0 .18-.014.356-.027.533h.559a5.853 5.853 0 0 0 .369-11.7Z"
+                      data-name="Path 90320"
+                    />
+                    <ellipse
+                      cx="5.859"
+                      cy="5.86"
+                      fill="#E48722"
+                      data-name="Ellipse 6510"
+                      rx="5.859"
+                      ry="5.86"
+                      transform="translate(6.397 11.685)"
+                    />
+                    <g fill="#fafafa" data-name="Group 121663">
+                      <path
+                        d="M12.257 21.273a.533.533 0 0 1-.533-.533v-6.394a.533.533 0 0 1 1.065 0v6.392a.533.533 0 0 1-.532.535Z"
+                        data-name="Path 90321"
+                      />
+                      <path
+                        d="M12.256 21.272a.532.532 0 0 1-.377-.156l-2.131-2.131a.533.533 0 0 1 .753-.753l1.755 1.754 1.754-1.754a.533.533 0 0 1 .753.753l-2.131 2.131a.533.533 0 0 1-.376.156Z"
+                        data-name="Path 90322"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <p class="mb-0 ms-2">
+                  400k+ <br class="d-lg-none" />App Downloads
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-   
+      <section class="cid-features">
+        <div class="container">
+          <div class="cid-sec-header">
+            <h3 class="h3 mb-4">Why Caller ID</h3>
+            <h2 class="h2 text-center">
+              Phone Number Search:<br /><strong>Free Spam Score</strong>
+            </h2>
+          </div>
+          <div class="row px-4 px-md-5 px-lg-3">
+            <div class="col-12 col-md-6 order-1 order-md-0 my-5 my-md-0">
+              <div class="features-anim">
+                <img src="assets/images/features-anim-bg.svg" alt="" />
+                <div
+                  class="features-anim-lottifiles lottie-animation"
+                  id="features-anim"
+                >
+                  <dotlottie-player
+                    src="https://lottie.host/9480f741-7c1d-4a22-b457-458a78ee96ee/jQH7tmDQag.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 500px; height: 500px"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="feature-cnt">
+                <h4 class="h4 d-flex align-items-center mb-2">
+                  <img
+                    class="me-2"
+                    src="assets/images/search-icon.svg"
+                    width="18"
+                    height="18"
+                    alt=""
+                    loading="lazy"
+                    role="presentation"
+                  />
+                  Search any number
+                </h4>
+                <p>
+                  Wondering who keeps texting your significant other every
+                  night? Want to know who left that annoying message at 6 in the
+                  morning? Search a number in our free reverse phone directory
+                  and let the <strong>Caller ID</strong> help.
+                </p>
+              </div>
+              <div class="feature-cnt">
+                <h4 class="h4 d-flex align-items-center mb-2">
+                  <img
+                    class="me-2"
+                    src="assets/images/spam-icon.svg"
+                    width="18"
+                    height="18"
+                    alt=""
+                    loading="lazy"
+                    role="presentation"
+                  />
+                  View spam reports
+                </h4>
+                <p>
+                  See where the number is located and who the owner is. You
+                  might even be able to find their name, age, address, & social
+                  profiles. Plus, you can leave comments to alert others whether
+                  someone is a telemarketer or scammer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  
+      <section class="cid-arms">
+        <div class="container-fluid container-lg px-4 px-md-5 px-lg-3">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center"
+            >
+              <div class="cid-armas-header">
+                <h3 class="h3 mb-4">Arm Yourself</h3>
+                <h2 class="h2 text-center text-md-start">
+                  Ignore telemarketers<br /><strong
+                    >&amp; avoid phone scams</strong
+                  >
+                </h2>
+              </div>
+              <p>
+                Never take an unwanted call again. See who's calling, their
+                location, complaints about the number, and more, where
+                available! You can even leave comments so others can defend
+                themselves, too.
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex justify-content-center mt-5 mt-md-0"
+            >
+              <img src="assets/images/arms-bg.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cid-app">
+       
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
   </body>
 </html>

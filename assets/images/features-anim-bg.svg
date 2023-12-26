@@ -1,0 +1,43 @@
+   <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="269"
+      height="228"
+      viewBox="0 0 269 228"
+    >
+      <defs>
+        <linearGradient
+          id="a"
+          x1=".273"
+          x2=".694"
+          y1=".071"
+          y2=".936"
+          gradientUnits="objectBoundingBox"
+        >
+          <stop offset="0" stop-color="#ff9600bd" />
+          <stop offset="1" stop-color="#fda16bde" />
+        </linearGradient>
+      </defs>
+      <g
+        fill="url(#a)"
+        data-name="Group 121650"
+        transform="translate(-211 -2130)"
+      >
+        <ellipse
+          cx="61"
+          cy="61.5"
+          data-name="Ellipse 6502"
+          opacity=".05"
+          rx="61"
+          ry="61.5"
+          transform="translate(358 2130)"
+        />
+        <circle
+          cx="114"
+          cy="114"
+          r="114"
+          data-name="Ellipse 6501"
+          opacity=".2"
+          transform="translate(211 2130)"
+        />
+      </g>
+    </svg>
